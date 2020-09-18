@@ -11,7 +11,7 @@
 }
 
 .recommended-friends span {
-  margin: 100px 0;
+  margin: 50px 0;
   display: block;
   text-align: center;
   font-size: 18px;
@@ -78,8 +78,8 @@
   position: relative;
 }
 .open-post__photo img {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 10px;
 }
 
@@ -120,4 +120,3 @@
   불안정한 흔들림이 사라짐*/
   animation: heartBeat 1s ease-in-out infinite;
 }
-/**/

@@ -1,7 +1,7 @@
 .alt-header {
-  margin-top: 20px;
+  margin-top: 0px;
   padding: var(--horizontal-space);
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 .alt-header__title {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -33,4 +33,3 @@
 .alt-header__column span:last-child {
   margin-left: 20px;
 }
-/**/

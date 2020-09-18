@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 50px;
+  padding: 15px 50px;
   box-sizing: border-box; /*내가 패딩을 줘도 박스 사이즈를 늘리지마 라는것*/
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
@@ -48,8 +48,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 30px;
-  bottom: 28px;
+  left: 20px;
+  bottom: 20px;
 }
 
 @keyframes appearBtnAnimation {
@@ -80,4 +80,3 @@
 .nav__btn:last-child {
   animation-delay: 0.7s;
 }
-/**/

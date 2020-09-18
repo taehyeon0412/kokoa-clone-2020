@@ -18,6 +18,7 @@
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
+  height: 125vh;
 }
 
 .main-screen {
@@ -25,4 +26,3 @@ body {
 }
 
 /* css 주석 */
-/**/

@@ -2,10 +2,10 @@
   text-align: center;
   display: block;
   background-color: #fafafa;
-  padding: 15px 0px;
+  padding: 10px 0px;
   font-size: 18px;
   margin-bottom: 10px;
-  margin-top: -10px;
+  margin-top: -30px;
 }
 
 #friends-display-link i {
@@ -67,4 +67,3 @@
 
 /*화면에 그대로 존재하기 때문에 무엇을 숨길때는 이 테크닉을 사용하면 안됨*/
 /*화면에서 없애려면 javascript가 필요함*/
-/**/
