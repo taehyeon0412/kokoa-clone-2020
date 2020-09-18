@@ -1,6 +1,6 @@
 .user-component {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
 }
 .user-component {
@@ -13,32 +13,32 @@
 }
 
 .user-component__avatar {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 30px;
   margin-right: 20px;
 }
 
 .user-component__title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .user-component__subtitle {
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .user-component__avatar--xl {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .user-component__avatar--sm {
-  width: 60px;
-  height: 60px;
-  border-radius: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
 }
 
 .user-component__title--not-bold {
