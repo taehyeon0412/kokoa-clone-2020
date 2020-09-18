@@ -11,7 +11,7 @@
 }
 
 .recommended-friends span {
-  margin: 50px 0;
+  margin: 100px 0;
   display: block;
   text-align: center;
   font-size: 18px;
@@ -78,12 +78,12 @@
   position: relative;
 }
 .open-post__photo img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 10px;
 }
 
-.open-post__heart-count {
+.open-post__hert-count {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 5px;
@@ -96,27 +96,6 @@
   font-size: 12px;
 }
 
-.open-post__heart-count span {
+.open-post__hert-count span {
   margin-left: 3px;
-}
-
-@keyframes heartBeat {
-  0% {
-    color: white;
-    transform: none;
-  }
-  50% {
-    color: tomato;
-    transform: scale(1.5);
-  }
-  100% {
-    color: pink;
-    transform: none;
-  }
-}
-
-.open-post__heart-count i {
-  will-change: transform; /*브라우저한테 미리 transform이 변할꺼라는걸 알려주는것
-  불안정한 흔들림이 사라짐*/
-  animation: heartBeat 1s ease-in-out infinite;
 }
