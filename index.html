@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to kokoa Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        <!--할일 : 와이파이 아이콘-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>10%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+        <!--배터리 아이콘-->
+        <!--충전중 아이콘-->
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Kokoa Clone!</h1>
+      <p class="welcome-header__text">
+        로그인을 하려면 이메일 또는 휴대폰 번호를 입력하여 주십시오.
+      </p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="password" />
+      <input type="submit" value="로그인" />
+      <a href="#">아이디 or 비밀번호 찾기</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>화면을 줄여주세요 ㅠ.ㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!--레이아웃영역 div는 박스형태로 옆으로 붙을수 없고 위아래로 붙음
+                span은 옆으로 붙음-->
+
+<!--div로 전체 레이아웃을 잡은다음 span태그로 공간에 내용을 입력함-->
+
+<!--div,p 태그는 가로,세로 사이즈 조절가능
+    span 태그는 가로,세로 사이즈 조절 X-->
+
+<!--div는 전체 레이아웃, p는 본문 레이아웃, span은 특정부분 강조 -->
+
+<!--BEM방식 : 박스-요소-설명 형식으로 나타냄 
+              요소는 __으로 설명은--으로 이어짐
+              ex)박스__요소--설명 => header__navigation--text
+            -->

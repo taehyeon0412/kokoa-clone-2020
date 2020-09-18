@@ -1,0 +1,29 @@
+.status-bar {
+  display: flex;
+  position: fixed; /*스크롤을 해도 고정되게 해줌*/
+  top: 0;
+  justify-content: center;
+  padding: 5px 3px;
+  width: 100%; /*fixed를 쓰려면 폭을 100% 다 쓴다고 해줘야
+                 자기가 정한 위치로 고정됨*/
+  box-sizing: border-box; /*내가 패딩을 줘도 박스 사이즈를 늘리지마 라는것*/
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-quarter {
+  margin: 0px 6px;
+}

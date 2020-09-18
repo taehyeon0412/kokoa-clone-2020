@@ -1,0 +1,82 @@
+.nav {
+  position: fixed; /*스크롤을 해도 고정되게 해줌*/
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 15px 50px;
+  box-sizing: border-box; /*내가 패딩을 줘도 박스 사이즈를 늘리지마 라는것*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative; /*absolut가 가장 가까운 relativ기준으로 움직이기
+  때문에 link클래스에 relativ를 써놓음 (안써놓으면 body기준)*/
+  color: #2e363e;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-7px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+/*네비게이션바 채팅알림 애니메이션*/
+
+.nav__notification {
+  position: absolute; /*이 코드는 가장 가까운 relativ를 가진 부모 기준으로 움직인다.*/
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 3s ease-in-out infinite;
+  /*네비게이션바 채팅알림 애니메이션*/
+}
+
+.nav__notification2 {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/*네비게이션바 밑으로 들어갔다 나왔다 하는것*/
+
+.nav__btn {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: appearBtnAnimation 0.4s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.7s;
+}

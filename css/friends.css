@@ -1,0 +1,69 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 10px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*투명도1에서 0까지 애니메이션으로 바꿈
+@keyframes 기억하기 */
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 130vh; /*화면 높이를 임의적으로 늘려놨으니 그 수치만큼 적어야됨*/
+  width: 100vw; /*화면 넓이의 100%를 차지한다는뜻*/
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 1s;
+}
+/*카톡 애니메이션기능*/
+
+/*애니메이션을 1초실행하고 forwards=>마지막실행을 그대로 유지한다*/
+
+/*마지막실행을 유지하는것이기 때문에 element는 그대로 있다
+이것을 없애야만 원래 카톡기능대로 수행된다.*/
+
+/*visibility:hidden => element는 그대로 있지만 사용자의 마우스에
+걸리지 않게 빠지는것(무시하는것) 그래서 정상적인 기능 수행가능*/
+
+/*화면에 그대로 존재하기 때문에 무엇을 숨길때는 이 테크닉을 사용하면 안됨*/
+/*화면에서 없애려면 javascript가 필요함*/
