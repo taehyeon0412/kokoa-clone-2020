@@ -5,7 +5,7 @@
 .more-suggestions {
   margin-top: 15px;
   border-top: var(--main-border);
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .more-suggestions__title {
@@ -17,16 +17,15 @@
 }
 
 .more-suggestions__icon {
-  margin-right: 20px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 13px;
 }
 
 .more-suggestions__icon-image img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
